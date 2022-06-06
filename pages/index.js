@@ -8,7 +8,7 @@ export default function Home() {
 				<title>Info Site</title>
 				<meta
 					name="description"
-					content="Edward's info site with code and howtos."
+					content="Edward's info site with code examples and howtos."
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
