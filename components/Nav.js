@@ -10,7 +10,7 @@ export const Nav = () => {
             </span>
             <span className="separator">|</span>
             <span>
-                <NavLink href="/techItems">Tech Items</NavLink>
+                <NavLink href="/tech-items">Tech Items</NavLink>
             </span>
             <span className="separator">|</span>
             <span>

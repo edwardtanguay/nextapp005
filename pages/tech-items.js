@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { SiteHeader } from '../components/SiteHeader';
 import { Nav } from '../components/Nav';
 import techItems from '../data/techItems.json';
+import { NavLink } from '../components/NavLink';
 
 const TechItems = () => {
 	return (
@@ -19,7 +20,7 @@ const TechItems = () => {
 			<p>Currently {techItems.length} tech items:</p>
 			<ul>
 				{techItems.map((techItem, index) => {
-					return <li key={index}>{techItem.title}</li>;
+					return <li key={index}><NavLink href={`tech-items/${techItem.id}`}>{techItem.title}</NavLink></li>;
 				})}
 			</ul>
 		</>
