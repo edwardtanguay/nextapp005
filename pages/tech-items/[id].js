@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { SiteHeader } from '../../components/SiteHeader';
 import { Nav } from '../../components/Nav';
@@ -6,8 +7,15 @@ import { NavLink } from '../../components/NavLink';
 import { useRouter } from 'next/router';
 
 const TechItems = () => {
+	const [techItem, setTechItem] = useState({});
 	const router = useRouter();
-	const { id } = router.query;
+
+	useEffect(() => {
+		const { id } = router.query;
+		const techItem = techItems.find((m) => m.id === id);
+		console.log(techItem, 'here');
+		alert('ok');
+	}, []);
 	return (
 		<>
 			<Head>
@@ -20,7 +28,7 @@ const TechItems = () => {
 			</Head>
 			<SiteHeader />
 			<Nav />
-			<h3>techItem with id={id}</h3>
+			{/* <h3>{techItem.title}</h3> */}
 		</>
 	);
 };
