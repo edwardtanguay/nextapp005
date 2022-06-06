@@ -10,7 +10,7 @@ export default function Home() {
 					name="description"
 					content="Edward's info site with code examples and howtos."
 				/>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/globe.ico" />
 			</Head>
 			<h1>Info Site</h1>
       <p>Welcome to this site.</p>
