@@ -12,7 +12,6 @@ export default function Home() {
 			<SiteHeader />
 			<Nav />
 			<p>Welcome to this site.</p>
-			<Image src={mainImage} width={700} alt="code on screen"/>
 			<img src="images/screenWithCode.jpg" alt="code on screen"/>
 		</>
 	);
