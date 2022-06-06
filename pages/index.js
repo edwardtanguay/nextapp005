@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import { Header } from '../components/Header';
+import { Nav } from '../components/Nav';
+import styles from '../styles/PageWelcome.module.css';
 
 export default function Home() {
 	return (
@@ -12,7 +14,9 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/globe.ico" />
 			</Head>
-			<h1>Info Site</h1>
+			<Header/>
+      <Nav/>
+      <h2>Welcome</h2>
       <p>Welcome to this site.</p>
       <p className={styles.highlight}>More changes coming soon...</p>
 		</>
