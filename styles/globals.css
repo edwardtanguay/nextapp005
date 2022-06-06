@@ -17,9 +17,19 @@ nav {
 	padding: 5px;
 	max-width: 600px;
 	color: #ccc;
+	font-size: 1.4rem;
 }
 
 nav .separator {
 	color: #777;
 	margin: 0 5px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+nav a.active {
+	color: yellow;
 }
