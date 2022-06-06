@@ -46,6 +46,7 @@ const TechItems = () => {
 			</Head>
 			<SiteHeader />
 			<Nav />
+			<code>The data on this page is loaded via useEffect/axios (much as with create-react-app and Vite) and so can be considered <a href="https://nextjs.org/docs/basic-features/data-fetching/overview">client-side rendering (CSR)</a>.</code>
 			{Object.entries(techItem).length > 0 && (
 				<>
 				<h2>{techItem.title}</h2>
