@@ -10,8 +10,8 @@ const About = () => {
 			<p>This is the about page with three links:</p>
 			<ul>
 				<li><NavLink href="about/background">Background</NavLink></li>
-				<li>Contents</li>
-				<li>Coming Soon</li>
+				<li><NavLink href="about/contents">Contents</NavLink></li>
+				<li><NavLink href="about/coming-soon">Coming Soon</NavLink></li>
 			</ul>
 		</>
 	);
