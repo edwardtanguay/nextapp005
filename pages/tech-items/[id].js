@@ -7,6 +7,7 @@ import { NavLink } from '../../components/NavLink';
 import { useRouter } from 'next/router';
 import * as qstr from '../../qtools/qstr';
 import axios from 'axios';
+import styles from '../../styles/TechItem.module.css';
 
 const url = 'https://edwardtanguay.netlify.app/share/techitems.json';
 
@@ -17,7 +18,6 @@ const TechItems = () => {
 	useEffect(() => {
 		if (!router.isReady) return;
 		const id = router.query['id'];
-		console.log('333', id);
 		(async () => {
 			const _techItems = (await axios.get(url)).data;
 			const _techItem = _techItems.find((m) => String(m.id) === id);
@@ -44,13 +44,13 @@ const TechItems = () => {
 			</Head>
 			<SiteHeader />
 			<Nav />
-			<h3>
-				{Object.entries(techItem).length > 0 && (
-					<>
-						{techItem.title} - {techItem.description}
-					</>
-				)}
-			</h3>
+			{Object.entries(techItem).length > 0 && (
+				<>
+				<h2>{techItem.title}</h2>
+				<p className={styles.description}>{techItem.description}</p>
+					<p><a target="_blank" href={`https://onespace.netlify.app/techItems?id=${techItem.id}`} rel="noreferrer">get more info</a></p>
+				</>
+			)}
 		</>
 	);
 };
