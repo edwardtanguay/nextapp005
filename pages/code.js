@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Header } from '../components/Header';
+import { SiteHeader } from '../components/SiteHeader';
 import { Nav } from '../components/Nav';
 
 const Code = () => {
@@ -13,9 +13,8 @@ const Code = () => {
 				/>
 				<link rel="icon" href="/code.ico" />
 			</Head>
-			<Header />
+			<SiteHeader />
 			<Nav />
-			<h2>Code Page</h2>
 			<p>These are the code examples.</p>
 		</>
 	);

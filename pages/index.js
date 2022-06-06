@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Header } from '../components/Header';
+import { SiteHeader } from '../components/SiteHeader';
 import { Nav } from '../components/Nav';
 import styles from '../styles/PageWelcome.module.css';
 
@@ -14,9 +14,8 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/globe.ico" />
 			</Head>
-			<Header/>
+			<SiteHeader/>
       <Nav/>
-      <h2>Welcome</h2>
       <p>Welcome to this site.</p>
       <p className={styles.highlight}>More changes coming soon...</p>
 		</>
