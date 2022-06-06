@@ -5,7 +5,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Edward's Info Site</title>
+				<title>Edward&apos;s Info Site</title>
 				<meta
 					name="description"
 					content="Edward's info site with code examples and howtos."
