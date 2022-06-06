@@ -5,7 +5,7 @@ import { DynamicHead } from '../../components/DynamicHead';
 const Contents = () => {
 	return (
 		<>
-			<DynamicHead description="The background story to Edward's tech site" />
+			<DynamicHead />
 			<SiteHeader />
 			<Nav />
 			<h2>Contents</h2>

@@ -5,7 +5,7 @@ import { DynamicHead } from '../../components/DynamicHead';
 const Background = () => {
 	return (
 		<>
-			<DynamicHead />
+			<DynamicHead  description="The background story to Edward's tech site"/>
 			<SiteHeader />
 			<Nav />
 			<h2>Background</h2>
