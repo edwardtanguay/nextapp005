@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import { SiteHeader } from '../components/SiteHeader';
-import { Nav } from '../components/Nav';
-import techItems from '../data/techItems.json';
-import { NavLink } from '../components/NavLink';
+import { SiteHeader } from '../../components/SiteHeader';
+import { Nav } from '../../components/Nav';
+import techItems from '../../data/techItems.json';
+import { NavLink } from '../../components/NavLink';
 
 const TechItems = () => {
 	return (
