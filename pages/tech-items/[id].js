@@ -8,6 +8,7 @@ import { useRouter } from 'next/router';
 import * as qstr from '../../qtools/qstr';
 import axios from 'axios';
 import styles from '../../styles/TechItem.module.css';
+import { DynamicHead } from '../../components/DynamicHead';
 
 const url = 'https://edwardtanguay.netlify.app/share/techitems.json';
 
@@ -34,6 +35,7 @@ const TechItems = () => {
 
 	return (
 		<>
+		 <DynamicHead/>
 			<Head>
 				<title>Edward&apos;s Tech Items</title>
 				<meta

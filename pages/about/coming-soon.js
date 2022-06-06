@@ -1,9 +1,11 @@
 import { SiteHeader } from '../../components/SiteHeader';
 import { Nav } from '../../components/Nav';
+import { DynamicHead } from '../../components/DynamicHead';
 
 const ComingSoon = () => {
 	return (
 		<>
+			<DynamicHead />
 			<SiteHeader />
 			<Nav />
 			<h2>Coming Soon</h2>

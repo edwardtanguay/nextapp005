@@ -1,9 +1,11 @@
 import { SiteHeader } from '../../components/SiteHeader';
 import { Nav } from '../../components/Nav';
+import { DynamicHead } from '../../components/DynamicHead';
 
 const Contents = () => {
 	return (
 		<>
+			<DynamicHead description="The background story to Edward's tech site" />
 			<SiteHeader />
 			<Nav />
 			<h2>Contents</h2>
