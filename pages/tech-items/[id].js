@@ -35,23 +35,30 @@ const TechItems = () => {
 
 	return (
 		<>
-		 <DynamicHead/>
-			<Head>
-				<title>Edward&apos;s Tech Items</title>
-				<meta
-					name="description"
-					content="Information on various technologies that are popular today."
-				/>
-				<link rel="icon" href="/code.ico" />
-			</Head>
+			<DynamicHead />
 			<SiteHeader />
 			<Nav />
-			<code>The data on this page is loaded via useEffect/axios (much as with create-react-app and Vite) and so can be considered <a href="https://nextjs.org/docs/basic-features/data-fetching/overview">client-side rendering (CSR)</a>.</code>
+			<code>
+				The data on this page is loaded via useEffect/axios (much as
+				with create-react-app and Vite) and so can be considered{' '}
+				<a href="https://nextjs.org/docs/basic-features/data-fetching/overview">
+					client-side rendering (CSR)
+				</a>
+				.
+			</code>
 			{Object.entries(techItem).length > 0 && (
 				<>
-				<h2>{techItem.title}</h2>
-				<p className={styles.description}>{techItem.description}</p>
-					<p><a target="_blank" href={`https://onespace.netlify.app/techItems?id=${techItem.id}`} rel="noreferrer">get more info</a></p>
+					<h2>{techItem.title}</h2>
+					<p className={styles.description}>{techItem.description}</p>
+					<p>
+						<a
+							target="_blank"
+							href={`https://onespace.netlify.app/techItems?id=${techItem.id}`}
+							rel="noreferrer"
+						>
+							get more info
+						</a>
+					</p>
 				</>
 			)}
 		</>
