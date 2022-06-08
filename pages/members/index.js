@@ -34,7 +34,7 @@ export default function Members({ members }) {
 				</a>
 				.
 			</code>
-			<p>There are {members.length} members.</p>
+			<p>There are {members.length} members.nnn</p>
 			<div className="members">
 				{members.map((member, index) => {
 					return (
